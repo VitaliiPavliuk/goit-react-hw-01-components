@@ -9,8 +9,8 @@ export const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
   return (
     <>
       <FriendStatus className={isOnline ? 'online' : 'offline'}></FriendStatus>
-      <FriendAvatar class="avatar" src={avatar} alt="User avatar" />
-      <FriendName class="name">{name}</FriendName>
+      <FriendAvatar src={avatar} alt="User avatar" />
+      <FriendName>{name}</FriendName>
     </>
   );
 };
